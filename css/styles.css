@@ -6,7 +6,7 @@
 
 body {
     background-image: url("../css/image/body-backgroundcolor.png");
-    background-size: auto 100vh;
+    background-size: 100vw 100vh;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -45,18 +45,20 @@ header {
 
 .menu li {
     list-style: none;
-    padding: 15px;
 }
 
 .menu a {
     color: #ffffff;
     display: block;
     padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+    transition: background-color 1s, color 1s;
 }
 
-a:hover {
-    text-decoration: underline;
+.menu a:hover {
+    background-color: #fff;
+    color: black;
 }
 
 .site-subtitle,
@@ -66,14 +68,19 @@ a:hover {
 
 .site-title {
     font-size: 4em;
+    transition: text-shadow 500ms;
 }
 
+.contatos,
 .projetos {
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
 }
+
+.contatos h2,
 .projetos h2 {
     color: #fff;
+    padding-top: 5px;
     margin-bottom: 1em;
 }
 
@@ -103,14 +110,32 @@ a:hover {
 
 
 .img-projeto  {
+    border-radius: 10px;
     width: 240px;
     height: 180px;
     object-fit: cover;
+    transition: transform 500ms;
 }
 
+.img-projeto:hover {
+    transform: scale(1.2);
+}
 
+.contatos a {
+    color: black;
+    font-size: 3em;
+    margin: 10px;
+    transition: text-shadow 1s;
+}
 
+.contatos a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px yellow;
+}
 
+.contatos .grid-icons {
+    text-align: center;
+}
 
 
 
